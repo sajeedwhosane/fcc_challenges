@@ -68,3 +68,42 @@ let twinkleStar = "Twinkle, twinkle, little star";
 let starRegex = /twinkle/gi; // Change this line
 let result4 = twinkleStar.match(starRegex); // Change this line
 console.log(result4);
+
+/*
+Match Anything with Wildcard Period
+'.'The wildcard character . will match any one character. The wildcard is also called dot and period.
+eg: var regex=/fu./;
+*/
+
+let exampleStr = "Let's have fun with regular expressions!";
+let unRegex = /.un/; // Change this/ line
+let result5 = unRegex.test(exampleStr);
+console.log(result5);
+
+/*
+Match Single Character with Multiple Possibilities
+You can search for a literal pattern with some flexibility with character classes. 
+Character classes allow you to define a group of characters you wish to match by placing them inside square ([ and ]) brackets.
+eg: for regex1
+
+
+*/
+let quoteSample = "Beware of bugs in the above code; I have only proved it correct, not tried it.";
+let vowelRegex = /[aeiou]/gi; // Change this line
+let result6 = quoteSample.match(vowelRegex); // Change this line
+console.log(result6);
+
+
+/*
+Match Letters of the Alphabet using a  character set.
+using hyphen character '-' you can select a range of characters.
+
+Match all the letters in the string quoteSample.
+
+Note: Be sure to match both uppercase and lowercase letters.
+*/
+
+let quoteSample = "The quick brown fox jumps over the lazy dog.";
+let alphabetRegex = /[a-z]/gi; // Change this line
+let result7 = quoteSample.match(alphabetRegex); // Change this line
+console.log(result)7;
