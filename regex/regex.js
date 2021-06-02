@@ -104,6 +104,17 @@ Note: Be sure to match both uppercase and lowercase letters.
 */
 
 let quoteSample = "The quick brown fox jumps over the lazy dog.";
-let alphabetRegex = /[a-z]/gi; // Change this line
-let result7 = quoteSample.match(alphabetRegex); // Change this line
+let alphabetRegex = /[a-z]/gi; 
+let result7 = quoteSample.match(alphabetRegex);
 console.log(result7);
+
+
+/*
+Match Numbers and Letters of the Alphabet
+Hyphen can also be used to check for a range of numbers.
+
+*/
+let quoteSample = "Blueberry 3.141592653s are delicious.";
+let myRegex8 = /[h-s2-6]/gi; // Change this line
+let result8 = quoteSample.match(myRegex); // Change this line
+console.log(result8);
