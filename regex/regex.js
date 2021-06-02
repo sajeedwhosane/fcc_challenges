@@ -132,5 +132,16 @@ let myRegex9 = /[^aeiou0-9]/gi;
 let result9 = quoteSample.match(myRegex9); 
 
 /*
+Match Characters that Occur One or More Times
+'+' character can be used to check if a pattern has occured more than one time.
+Sometimes, you need to match a character (or group of characters) that appears one or more times in a row.
+ This means it occurs at least once, and may be repeated.
+ eg regex=/a+/g
+ would find one match 'aa' in aabc , 'aaa' in aaab , 'a' in abab 
 
 */
+let difficultSpelling = "Mississippi";
+let myRegex = /s+/g; // Change this line
+let result10 = difficultSpelling.match(myRegex);
+console.log(result10);
+
