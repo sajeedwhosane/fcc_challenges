@@ -118,3 +118,19 @@ let quoteSample = "Blueberry 3.141592653s are delicious.";
 let myRegex8 = /[h-s2-6]/gi; // Change this line
 let result8 = quoteSample.match(myRegex); // Change this line
 console.log(result8);
+
+
+/*
+Match Single Characters Not Specified
+Negated character sets:
+you can create a set of characters you do not want to match.
+To create a negated character set, you place a caret character (^)
+var regex=/[^aeiou]/gi
+*/
+let quoteSample = "3 blind mice.";
+let myRegex9 = /[^aeiou0-9]/gi; 
+let result9 = quoteSample.match(myRegex9); 
+
+/*
+
+*/
