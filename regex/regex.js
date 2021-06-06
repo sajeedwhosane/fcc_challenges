@@ -141,7 +141,44 @@ Sometimes, you need to match a character (or group of characters) that appears o
 
 */
 let difficultSpelling = "Mississippi";
-let myRegex = /s+/g; // Change this line
+let myRegex = /s+/g; 
 let result10 = difficultSpelling.match(myRegex);
 console.log(result10);
 
+/*
+Match Characters that Occur Zero or More Times
+The character to do this is the asterisk or star: *.
+
+let soccerWord = "gooooooooal!";
+let gPhrase = "gut feeling";
+let oPhrase = "over the moon";
+//let goRegex = /go*/
+/*soccerWord.match(goRegex);
+gPhrase.match(goRegex);
+oPhrase.match(goRegex);
+
+In order, the three match calls would return the values ["goooooooo"], ["g"], and null.
+
+
+*/
+let chewieRegex = /Aa*/; 
+let chewieQuote="Aaaaaaaaargh!";
+let result11 = chewieQuote.match(chewieRegex);
+console.log(result11);
+
+
+/*
+Find Characters with Lazy Matching
+ a greedy match finds the longest possible part of a string that fits the regex pattern and returns it as a match.
+  a lazy match, which finds the smallest possible part of the string that satisfies the regex pattern.
+  eg: regex=/t[a-z]*i/; string="titanic"; string.match(regex); returns "titani" with greedy match
+  you can use the ? character to change it to lazy matching. "titanic" matched against the adjusted regex of /t[a-z]*?i/ returns ["ti"].
+*/
+let text = "<h1>Winter is coming</h1>";
+let myRegex11 = /<.*?>/; // Change this line
+let result12 = text.match(myRegex);
+console.log(result12);
+
+/*
+
+*/
